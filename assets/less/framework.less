@@ -1,0 +1,51 @@
+/* helpers */
+.imr{display:block;text-indent:-999em;overflow:hidden;background-repeat:no-repeat;text-align:left;direction:ltr}
+.hidden{display:none;visibility:hidden}
+.clear{clear:both;display:block}
+.clearfix{width:100%;height:0;border:0;margin:0;clear:both;display:block}
+.fleft{float:left}
+.fright{float:right}
+.nomrg{margin:0}
+.nopdn{padding:0}
+.nobrdr{border:0}
+.ln{width:100%;display:inline-block}
+.mauto{margin:0 auto}
+/* end helpers */
+
+.h(@height){
+	height:@height;
+}
+
+.w(@width){
+	width:@width;
+}
+
+.bg(@background){
+	background:@background;
+}
+
+.fl(){
+	float:left;
+}
+
+.fr(){
+	float:right;
+}
+
+.mrg(@t:0,@r:0,@b:0,@l:0){
+	margin:@arguments;
+}
+
+.pd(@pt:0,@pr:0,@pb:0,@pl:0){
+	padding:@arguments;
+}
+
+.hover_padrao(@color:#fff){
+	color:@color;
+}
+
+.inlineblock(){
+	display:inline-block;
+	.w(100%);
+	.mrg(0,0,-3px,0);
+}
